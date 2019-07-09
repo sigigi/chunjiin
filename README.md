@@ -6,7 +6,7 @@
 관련 개발자님들이 필요한 경우가 있을 것 같아 올려봅니다.
 라이센스 역시 MIT 라이센스를 적용합니다.
 
- * Form1.cs 파일이 예제 파일입니다.
+ * dotnetChunjiinKeyPad/ChunjiinKeyPad/Form1.cs 파일이 예제 파일입니다.
  * Visual Studio 2017 Community 버전으로 작성되었습니다.
  
  
