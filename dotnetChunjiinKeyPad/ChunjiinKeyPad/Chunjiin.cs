@@ -178,7 +178,7 @@ namespace ChunjiinKeyPad
 
         private void Chunjiin_Click(object sender, EventArgs e)
         {
-            OnKeyPadInputTimerStop();
+            //OnKeyPadInputTimerStop();
             int input = -1;
             for(int i = 0; i < btn.Length; i++)
             {
@@ -199,10 +199,11 @@ namespace ChunjiinKeyPad
 
             write(now_mode);
             et.Focus();
-            OnKeyPadInputTimerStart(keyInputTimerPeriod);
+            //OnKeyPadInputTimerStart(keyInputTimerPeriod);
         }
         private void hangulMake(int input)
         {
+            OnKeyPadInputTimerStop();
             String beforedata = "";
             String nowdata = "";
             String overdata = "";
@@ -379,6 +380,7 @@ namespace ChunjiinKeyPad
             }
             else //자음
             {
+                OnKeyPadInputTimerStart(keyInputTimerPeriod);
                 if (hangul.step == 1)
                 {
                     if (hangul.jungsung.Equals("·") || hangul.jungsung.Equals("‥"))
